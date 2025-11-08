@@ -15,6 +15,6 @@
   "devDependencies": {
     "nodemon": "^2.0.4"
   },
-  "author": "John Smith",
+  "author": "Jane Doe",
   "license": "ISC"
 }
