@@ -16,5 +16,5 @@
     "nodemon": "^2.0.4"
   },
   "author": "Jane Doe",
-  "license": "ISC"
+  "license": "MIT"
 }
