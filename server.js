@@ -17,7 +17,7 @@ mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
 
 // Routes
 app.get('/', (req, res) => {
-  res.send('Chào mừng bạn đến với Coc Viec Tu Xa API!');
+  res.send('Welcome to the Coc Viec Tu Xa API!');
 });
 
 app.listen(PORT, () => {
