@@ -12,8 +12,8 @@ app.use(express.json());
 // Connect to MongoDB
 const mongoURI = process.env.MONGODB_URI || 'mongodb://localhost:27017/coc-viec-tu-xa';
 mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
-  .then(() => console.log('Kết nối đến MongoDB thành công'))
-  .catch(err => console.log('Lỗi kết nối MongoDB: ', err));
+  .then(() => console.log('Successfully connected to MongoDB'))
+  .catch(err => console.log('MongoDB connection error: ', err));
 
 // Routes
 app.get('/', (req, res) => {
@@ -21,5 +21,5 @@ app.get('/', (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`Server đang chạy trên cổng ${PORT}`);
+  console.log(`Server is running on port ${PORT}`);
 });
