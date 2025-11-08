@@ -10,7 +10,7 @@ app.use(cors());
 app.use(express.json());
 
 // Connect to MongoDB
-const mongoURI = process.env.MONGODB_URI || 'mongodb://localhost/coc-viec-tu-xa';
+const mongoURI = process.env.MONGODB_URI || 'mongodb://localhost:27017/coc-viec-tu-xa';
 mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log('Kết nối đến MongoDB thành công'))
   .catch(err => console.log('Lỗi kết nối MongoDB: ', err));
